@@ -19,10 +19,14 @@
 		FA52255F265CF4F300DB7BEE /* History.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FA52255D265CF4F300DB7BEE /* History.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FA8D63FB265E295C0080D049 /* Register.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA8D63FA265E295C0080D049 /* Register.framework */; };
 		FA8D63FC265E295C0080D049 /* Register.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FA8D63FA265E295C0080D049 /* Register.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FA8D6502265E8FD00080D049 /* CreatePin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA8D6501265E8FD00080D049 /* CreatePin.framework */; };
+		FA8D6503265E8FD00080D049 /* CreatePin.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FA8D6501265E8FD00080D049 /* CreatePin.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FAAA8D30265B90FF00B83678 /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAAA8D2F265B90FF00B83678 /* Core.framework */; };
 		FAAA8D31265B90FF00B83678 /* Core.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FAAA8D2F265B90FF00B83678 /* Core.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FAAA8D56265BA6ED00B83678 /* Login.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAAA8D55265BA6ED00B83678 /* Login.framework */; };
 		FAAA8D57265BA6ED00B83678 /* Login.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FAAA8D55265BA6ED00B83678 /* Login.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FAAE6F24265F5B4F004A9411 /* ConfirmOtp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAAE6F23265F5B4F004A9411 /* ConfirmOtp.framework */; };
+		FAAE6F25265F5B4F004A9411 /* ConfirmOtp.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FAAE6F23265F5B4F004A9411 /* ConfirmOtp.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -32,6 +36,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				FAAE6F25265F5B4F004A9411 /* ConfirmOtp.framework in Embed Frameworks */,
+				FA8D6503265E8FD00080D049 /* CreatePin.framework in Embed Frameworks */,
 				FAAA8D57265BA6ED00B83678 /* Login.framework in Embed Frameworks */,
 				FAAA8D31265B90FF00B83678 /* Core.framework in Embed Frameworks */,
 				FA522509265CB30900DB7BEE /* Home.framework in Embed Frameworks */,
@@ -58,10 +64,12 @@
 		FA52255D265CF4F300DB7BEE /* History.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = History.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA8D63BA265E1B2B0080D049 /* Registration.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Registration.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA8D63FA265E295C0080D049 /* Register.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Register.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA8D6501265E8FD00080D049 /* CreatePin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CreatePin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAAA8CA2265B5AA700B83678 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
 		FAAA8CA3265B5AB500B83678 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
 		FAAA8D2F265B90FF00B83678 /* Core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAAA8D55265BA6ED00B83678 /* Login.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Login.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAAE6F23265F5B4F004A9411 /* ConfirmOtp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ConfirmOtp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +77,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA8D6502265E8FD00080D049 /* CreatePin.framework in Frameworks */,
+				FAAE6F24265F5B4F004A9411 /* ConfirmOtp.framework in Frameworks */,
 				70A6ADFB4476FAC1E38D72A9 /* Pods_App.framework in Frameworks */,
 				FAAA8D56265BA6ED00B83678 /* Login.framework in Frameworks */,
 				FAAA8D30265B90FF00B83678 /* Core.framework in Frameworks */,
@@ -93,6 +103,8 @@
 		A84D05478BA548623AD5321B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FAAE6F23265F5B4F004A9411 /* ConfirmOtp.framework */,
+				FA8D6501265E8FD00080D049 /* CreatePin.framework */,
 				FA8D63FA265E295C0080D049 /* Register.framework */,
 				FA8D63BA265E1B2B0080D049 /* Registration.framework */,
 				FA52255D265CF4F300DB7BEE /* History.framework */,

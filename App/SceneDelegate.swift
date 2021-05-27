@@ -11,6 +11,8 @@ import Login
 import Home
 import History
 import Register
+import CreatePin
+import ConfirmOtp
 
 @available(iOS 13.0, *)
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
@@ -93,6 +95,14 @@ extension SceneDelegate {
         
         AppRouter.shared.historyScene = { viewController in
             HistoryRouterImpl.navigateToModule(viewController: viewController)
+        }
+        
+        AppRouter.shared.createPinScene = {viewController in
+            CreatePinRouterImpl.navigateToModule(viewController: viewController)
+        }
+        
+        AppRouter.shared.confirmOtpScene = { viewController in
+            ConfirmOtpRouterImpl.navigateToModule(viewController: viewController)
         }
         
     }
