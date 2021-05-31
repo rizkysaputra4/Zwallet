@@ -65,34 +65,6 @@
 		FA25D253265B48D30004F245 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA522507265CB30900DB7BEE /* Home.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Home.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA52255D265CF4F300DB7BEE /* History.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = History.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FA548B7E2664071E0030D6D7 /* NunitoSans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NunitoSans-SemiBold.ttf"; sourceTree = "<group>"; };
-		FA548B7F2664071E0030D6D7 /* NunitoSans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NunitoSans-SemiBold.ttf"; path = "../../../../Module/Core/Core/Fonts/Nunito Sans/NunitoSans-SemiBold.ttf"; sourceTree = "<group>"; };
-		FA548B802664071F0030D6D7 /* NunitoSans-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NunitoSans-ExtraLight.ttf"; sourceTree = "<group>"; };
-		FA548B812664071F0030D6D7 /* NunitoSans-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NunitoSans-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
-		FA548B822664071F0030D6D7 /* NunitoSans-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NunitoSans-ExtraBold.ttf"; sourceTree = "<group>"; };
-		FA548B832664071F0030D6D7 /* NunitoSans-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NunitoSans-LightItalic.ttf"; sourceTree = "<group>"; };
-		FA548B842664071F0030D6D7 /* NunitoSans-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NunitoSans-LightItalic.ttf"; path = "../../../../Module/Core/Core/Fonts/Nunito Sans/NunitoSans-LightItalic.ttf"; sourceTree = "<group>"; };
-		FA548B852664071F0030D6D7 /* NunitoSans-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NunitoSans-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
-		FA548B862664071F0030D6D7 /* NunitoSans-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NunitoSans-Black.ttf"; sourceTree = "<group>"; };
-		FA548B872664071F0030D6D7 /* NunitoSans-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NunitoSans-ExtraBoldItalic.ttf"; path = "../../../../Module/Core/Core/Fonts/Nunito Sans/NunitoSans-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
-		FA548B882664071F0030D6D7 /* NunitoSans-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NunitoSans-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
-		FA548B892664071F0030D6D7 /* NunitoSans-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NunitoSans-Black.ttf"; path = "../../../../Module/Core/Core/Fonts/Nunito Sans/NunitoSans-Black.ttf"; sourceTree = "<group>"; };
-		FA548B8A2664071F0030D6D7 /* NunitoSans-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NunitoSans-ExtraLightItalic.ttf"; path = "../../../../Module/Core/Core/Fonts/Nunito Sans/NunitoSans-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
-		FA548B8B2664071F0030D6D7 /* NunitoSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NunitoSans-Regular.ttf"; sourceTree = "<group>"; };
-		FA548B8C2664071F0030D6D7 /* NunitoSans-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NunitoSans-SemiBoldItalic.ttf"; path = "../../../../Module/Core/Core/Fonts/Nunito Sans/NunitoSans-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
-		FA548B8D2664071F0030D6D7 /* NunitoSans-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NunitoSans-BlackItalic.ttf"; sourceTree = "<group>"; };
-		FA548B8E2664071F0030D6D7 /* NunitoSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NunitoSans-Italic.ttf"; sourceTree = "<group>"; };
-		FA548B8F2664071F0030D6D7 /* NunitoSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NunitoSans-Bold.ttf"; sourceTree = "<group>"; };
-		FA548B902664071F0030D6D7 /* NunitoSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NunitoSans-Bold.ttf"; path = "../../../../Module/Core/Core/Fonts/Nunito Sans/NunitoSans-Bold.ttf"; sourceTree = "<group>"; };
-		FA548B91266407200030D6D7 /* NunitoSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NunitoSans-BoldItalic.ttf"; sourceTree = "<group>"; };
-		FA548B92266407200030D6D7 /* NunitoSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NunitoSans-Light.ttf"; sourceTree = "<group>"; };
-		FA548B93266407200030D6D7 /* NunitoSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NunitoSans-Italic.ttf"; path = "../../../../Module/Core/Core/Fonts/Nunito Sans/NunitoSans-Italic.ttf"; sourceTree = "<group>"; };
-		FA548B94266407200030D6D7 /* NunitoSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NunitoSans-Regular.ttf"; path = "../../../../Module/Core/Core/Fonts/Nunito Sans/NunitoSans-Regular.ttf"; sourceTree = "<group>"; };
-		FA548B95266407200030D6D7 /* NunitoSans-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NunitoSans-ExtraBold.ttf"; path = "../../../../Module/Core/Core/Fonts/Nunito Sans/NunitoSans-ExtraBold.ttf"; sourceTree = "<group>"; };
-		FA548B96266407200030D6D7 /* NunitoSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NunitoSans-Light.ttf"; path = "../../../../Module/Core/Core/Fonts/Nunito Sans/NunitoSans-Light.ttf"; sourceTree = "<group>"; };
-		FA548B97266407200030D6D7 /* NunitoSans-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NunitoSans-ExtraLight.ttf"; path = "../../../../Module/Core/Core/Fonts/Nunito Sans/NunitoSans-ExtraLight.ttf"; sourceTree = "<group>"; };
-		FA548B98266407200030D6D7 /* NunitoSans-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NunitoSans-BlackItalic.ttf"; path = "../../../../Module/Core/Core/Fonts/Nunito Sans/NunitoSans-BlackItalic.ttf"; sourceTree = "<group>"; };
-		FA548B99266407200030D6D7 /* NunitoSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NunitoSans-BoldItalic.ttf"; path = "../../../../Module/Core/Core/Fonts/Nunito Sans/NunitoSans-BoldItalic.ttf"; sourceTree = "<group>"; };
 		FA548B9B266407200030D6D7 /* NunitoSans-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NunitoSans-LightItalic.ttf"; sourceTree = "<group>"; };
 		FA548B9C266407200030D6D7 /* NunitoSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NunitoSans-BoldItalic.ttf"; sourceTree = "<group>"; };
 		FA548B9D266407200030D6D7 /* NunitoSans-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NunitoSans-ExtraLight.ttf"; sourceTree = "<group>"; };
@@ -215,44 +187,8 @@
 			isa = PBXGroup;
 			children = (
 				FA548B9A266407200030D6D7 /* Nunito Sans */,
-				FA548B7D2664071E0030D6D7 /* Nunito Sans */,
 			);
 			path = Fonts;
-			sourceTree = "<group>";
-		};
-		FA548B7D2664071E0030D6D7 /* Nunito Sans */ = {
-			isa = PBXGroup;
-			children = (
-				FA548B8E2664071F0030D6D7 /* NunitoSans-Italic.ttf */,
-				FA548B93266407200030D6D7 /* NunitoSans-Italic.ttf */,
-				FA548B97266407200030D6D7 /* NunitoSans-ExtraLight.ttf */,
-				FA548B92266407200030D6D7 /* NunitoSans-Light.ttf */,
-				FA548B95266407200030D6D7 /* NunitoSans-ExtraBold.ttf */,
-				FA548B96266407200030D6D7 /* NunitoSans-Light.ttf */,
-				FA548B832664071F0030D6D7 /* NunitoSans-LightItalic.ttf */,
-				FA548B842664071F0030D6D7 /* NunitoSans-LightItalic.ttf */,
-				FA548B8F2664071F0030D6D7 /* NunitoSans-Bold.ttf */,
-				FA548B902664071F0030D6D7 /* NunitoSans-Bold.ttf */,
-				FA548B98266407200030D6D7 /* NunitoSans-BlackItalic.ttf */,
-				FA548B91266407200030D6D7 /* NunitoSans-BoldItalic.ttf */,
-				FA548B99266407200030D6D7 /* NunitoSans-BoldItalic.ttf */,
-				FA548B812664071F0030D6D7 /* NunitoSans-ExtraBoldItalic.ttf */,
-				FA548B872664071F0030D6D7 /* NunitoSans-ExtraBoldItalic.ttf */,
-				FA548B802664071F0030D6D7 /* NunitoSans-ExtraLight.ttf */,
-				FA548B862664071F0030D6D7 /* NunitoSans-Black.ttf */,
-				FA548B892664071F0030D6D7 /* NunitoSans-Black.ttf */,
-				FA548B8D2664071F0030D6D7 /* NunitoSans-BlackItalic.ttf */,
-				FA548B822664071F0030D6D7 /* NunitoSans-ExtraBold.ttf */,
-				FA548B8C2664071F0030D6D7 /* NunitoSans-SemiBoldItalic.ttf */,
-				FA548B882664071F0030D6D7 /* NunitoSans-SemiBoldItalic.ttf */,
-				FA548B852664071F0030D6D7 /* NunitoSans-ExtraLightItalic.ttf */,
-				FA548B8A2664071F0030D6D7 /* NunitoSans-ExtraLightItalic.ttf */,
-				FA548B94266407200030D6D7 /* NunitoSans-Regular.ttf */,
-				FA548B8B2664071F0030D6D7 /* NunitoSans-Regular.ttf */,
-				FA548B7F2664071E0030D6D7 /* NunitoSans-SemiBold.ttf */,
-				FA548B7E2664071E0030D6D7 /* NunitoSans-SemiBold.ttf */,
-			);
-			path = "Nunito Sans";
 			sourceTree = "<group>";
 		};
 		FA548B9A266407200030D6D7 /* Nunito Sans */ = {
