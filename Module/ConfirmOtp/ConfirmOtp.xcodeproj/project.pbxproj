@@ -1,0 +1,651 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		31494448C07C8A6279F7F7DF /* Pods_ConfirmOtp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D04EAFF11518975BA0D5C3C /* Pods_ConfirmOtp.framework */; };
+		FAAE6EF2265F5A77004A9411 /* ConfirmOtp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAAE6EE8265F5A77004A9411 /* ConfirmOtp.framework */; };
+		FAAE6EF7265F5A77004A9411 /* ConfirmOtpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAE6EF6265F5A77004A9411 /* ConfirmOtpTests.swift */; };
+		FAAE6EF9265F5A77004A9411 /* ConfirmOtp.h in Headers */ = {isa = PBXBuildFile; fileRef = FAAE6EEB265F5A77004A9411 /* ConfirmOtp.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FAAE6F20265F5B3C004A9411 /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAAE6F1F265F5B3C004A9411 /* Core.framework */; };
+		FAAE6F21265F5B3C004A9411 /* Core.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FAAE6F1F265F5B3C004A9411 /* Core.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FAAE6F2B265F5BBC004A9411 /* ConfirmOtpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAE6F2A265F5BBC004A9411 /* ConfirmOtpView.swift */; };
+		FAAE6F2E265F5BCE004A9411 /* ConfirmOtpDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAE6F2D265F5BCE004A9411 /* ConfirmOtpDataSource.swift */; };
+		FAAE6F33265F5C21004A9411 /* ConfirmOtpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAE6F31265F5C21004A9411 /* ConfirmOtpViewController.swift */; };
+		FAAE6F34265F5C21004A9411 /* ConfirmOtpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAAE6F32265F5C21004A9411 /* ConfirmOtpViewController.xib */; };
+		FAAE6F3C265F5DF7004A9411 /* ConfirmOtpCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAE6F3B265F5DF7004A9411 /* ConfirmOtpCellDelegate.swift */; };
+		FAAE6F4F265F7007004A9411 /* ConfirmOtpCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAE6F4D265F7007004A9411 /* ConfirmOtpCell.swift */; };
+		FAAE6F50265F7007004A9411 /* ConfirmOtpCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAAE6F4E265F7007004A9411 /* ConfirmOtpCell.xib */; };
+		FAAE6F53265F70E6004A9411 /* ConfirmOtpPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAE6F52265F70E6004A9411 /* ConfirmOtpPresenter.swift */; };
+		FAAE6F56265F70F7004A9411 /* ConfirmOtpPresenterImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAE6F55265F70F7004A9411 /* ConfirmOtpPresenterImpl.swift */; };
+		FAAE6F59265F7246004A9411 /* ConfirmPinInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAE6F58265F7246004A9411 /* ConfirmPinInteractor.swift */; };
+		FAAE6F5C265F7256004A9411 /* ConfirmPinInteractorImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAE6F5B265F7256004A9411 /* ConfirmPinInteractorImpl.swift */; };
+		FAAE6F5F265F7264004A9411 /* ConfirmPinInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAE6F5E265F7264004A9411 /* ConfirmPinInteractorOutput.swift */; };
+		FAAE6F62265F7421004A9411 /* ConfirmOtpRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAE6F61265F7421004A9411 /* ConfirmOtpRouter.swift */; };
+		FAAE6F65265F7430004A9411 /* ConfirmOtpRouterImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAE6F64265F7430004A9411 /* ConfirmOtpRouterImpl.swift */; };
+		FAAE6F68265F8A3F004A9411 /* Login.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAAE6F67265F8A3F004A9411 /* Login.framework */; };
+		FAAE6F69265F8A3F004A9411 /* Login.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FAAE6F67265F8A3F004A9411 /* Login.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FAAE6EF3265F5A77004A9411 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FAAE6EDF265F5A77004A9411 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAAE6EE7265F5A77004A9411;
+			remoteInfo = ConfirmOtp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FAAE6F22265F5B3C004A9411 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				FAAE6F69265F8A3F004A9411 /* Login.framework in Embed Frameworks */,
+				FAAE6F21265F5B3C004A9411 /* Core.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		4FDA1BEB6C23914DB906AFF3 /* Pods-ConfirmOtp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConfirmOtp.debug.xcconfig"; path = "Target Support Files/Pods-ConfirmOtp/Pods-ConfirmOtp.debug.xcconfig"; sourceTree = "<group>"; };
+		989A8BD501D25EAF2276A880 /* Pods-ConfirmOtp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConfirmOtp.release.xcconfig"; path = "Target Support Files/Pods-ConfirmOtp/Pods-ConfirmOtp.release.xcconfig"; sourceTree = "<group>"; };
+		9D04EAFF11518975BA0D5C3C /* Pods_ConfirmOtp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ConfirmOtp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAAE6EE8265F5A77004A9411 /* ConfirmOtp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ConfirmOtp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAAE6EEB265F5A77004A9411 /* ConfirmOtp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConfirmOtp.h; sourceTree = "<group>"; };
+		FAAE6EEC265F5A77004A9411 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAAE6EF1265F5A77004A9411 /* ConfirmOtpTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ConfirmOtpTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAAE6EF6265F5A77004A9411 /* ConfirmOtpTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmOtpTests.swift; sourceTree = "<group>"; };
+		FAAE6EF8265F5A77004A9411 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAAE6F1F265F5B3C004A9411 /* Core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAAE6F2A265F5BBC004A9411 /* ConfirmOtpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmOtpView.swift; sourceTree = "<group>"; };
+		FAAE6F2D265F5BCE004A9411 /* ConfirmOtpDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmOtpDataSource.swift; sourceTree = "<group>"; };
+		FAAE6F31265F5C21004A9411 /* ConfirmOtpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmOtpViewController.swift; sourceTree = "<group>"; };
+		FAAE6F32265F5C21004A9411 /* ConfirmOtpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConfirmOtpViewController.xib; sourceTree = "<group>"; };
+		FAAE6F3B265F5DF7004A9411 /* ConfirmOtpCellDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmOtpCellDelegate.swift; sourceTree = "<group>"; };
+		FAAE6F4D265F7007004A9411 /* ConfirmOtpCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmOtpCell.swift; sourceTree = "<group>"; };
+		FAAE6F4E265F7007004A9411 /* ConfirmOtpCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConfirmOtpCell.xib; sourceTree = "<group>"; };
+		FAAE6F52265F70E6004A9411 /* ConfirmOtpPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmOtpPresenter.swift; sourceTree = "<group>"; };
+		FAAE6F55265F70F7004A9411 /* ConfirmOtpPresenterImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmOtpPresenterImpl.swift; sourceTree = "<group>"; };
+		FAAE6F58265F7246004A9411 /* ConfirmPinInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmPinInteractor.swift; sourceTree = "<group>"; };
+		FAAE6F5B265F7256004A9411 /* ConfirmPinInteractorImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmPinInteractorImpl.swift; sourceTree = "<group>"; };
+		FAAE6F5E265F7264004A9411 /* ConfirmPinInteractorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmPinInteractorOutput.swift; sourceTree = "<group>"; };
+		FAAE6F61265F7421004A9411 /* ConfirmOtpRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmOtpRouter.swift; sourceTree = "<group>"; };
+		FAAE6F64265F7430004A9411 /* ConfirmOtpRouterImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmOtpRouterImpl.swift; sourceTree = "<group>"; };
+		FAAE6F67265F8A3F004A9411 /* Login.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Login.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FAAE6EE5265F5A77004A9411 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31494448C07C8A6279F7F7DF /* Pods_ConfirmOtp.framework in Frameworks */,
+				FAAE6F68265F8A3F004A9411 /* Login.framework in Frameworks */,
+				FAAE6F20265F5B3C004A9411 /* Core.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAAE6EEE265F5A77004A9411 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAAE6EF2265F5A77004A9411 /* ConfirmOtp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		20C168F50CB44EFDF208F534 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4FDA1BEB6C23914DB906AFF3 /* Pods-ConfirmOtp.debug.xcconfig */,
+				989A8BD501D25EAF2276A880 /* Pods-ConfirmOtp.release.xcconfig */,
+			);
+			name = Pods;
+			path = ../../App/Pods;
+			sourceTree = "<group>";
+		};
+		B2E7B9002FB94CBF755544D9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FAAE6F67265F8A3F004A9411 /* Login.framework */,
+				FAAE6F1F265F5B3C004A9411 /* Core.framework */,
+				9D04EAFF11518975BA0D5C3C /* Pods_ConfirmOtp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FAAE6EDE265F5A77004A9411 = {
+			isa = PBXGroup;
+			children = (
+				FAAE6EEA265F5A77004A9411 /* ConfirmOtp */,
+				FAAE6EF5265F5A77004A9411 /* ConfirmOtpTests */,
+				FAAE6EE9265F5A77004A9411 /* Products */,
+				20C168F50CB44EFDF208F534 /* Pods */,
+				B2E7B9002FB94CBF755544D9 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FAAE6EE9265F5A77004A9411 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FAAE6EE8265F5A77004A9411 /* ConfirmOtp.framework */,
+				FAAE6EF1265F5A77004A9411 /* ConfirmOtpTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FAAE6EEA265F5A77004A9411 /* ConfirmOtp */ = {
+			isa = PBXGroup;
+			children = (
+				FAAE6F1E265F5B20004A9411 /* Router */,
+				FAAE6F1D265F5B12004A9411 /* Entity */,
+				FAAE6F1C265F5B0D004A9411 /* Presenter */,
+				FAAE6F1B265F5B07004A9411 /* Interactor */,
+				FAAE6F1A265F5B02004A9411 /* View */,
+				FAAE6EEB265F5A77004A9411 /* ConfirmOtp.h */,
+				FAAE6EEC265F5A77004A9411 /* Info.plist */,
+			);
+			path = ConfirmOtp;
+			sourceTree = "<group>";
+		};
+		FAAE6EF5265F5A77004A9411 /* ConfirmOtpTests */ = {
+			isa = PBXGroup;
+			children = (
+				FAAE6EF6265F5A77004A9411 /* ConfirmOtpTests.swift */,
+				FAAE6EF8265F5A77004A9411 /* Info.plist */,
+			);
+			path = ConfirmOtpTests;
+			sourceTree = "<group>";
+		};
+		FAAE6F1A265F5B02004A9411 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FAAE6F26265F5B6C004A9411 /* ConfirmOtpCell */,
+				FAAE6F2A265F5BBC004A9411 /* ConfirmOtpView.swift */,
+				FAAE6F2D265F5BCE004A9411 /* ConfirmOtpDataSource.swift */,
+				FAAE6F31265F5C21004A9411 /* ConfirmOtpViewController.swift */,
+				FAAE6F32265F5C21004A9411 /* ConfirmOtpViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FAAE6F1B265F5B07004A9411 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				FAAE6F58265F7246004A9411 /* ConfirmPinInteractor.swift */,
+				FAAE6F5B265F7256004A9411 /* ConfirmPinInteractorImpl.swift */,
+				FAAE6F5E265F7264004A9411 /* ConfirmPinInteractorOutput.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		FAAE6F1C265F5B0D004A9411 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				FAAE6F52265F70E6004A9411 /* ConfirmOtpPresenter.swift */,
+				FAAE6F55265F70F7004A9411 /* ConfirmOtpPresenterImpl.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		FAAE6F1D265F5B12004A9411 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		FAAE6F1E265F5B20004A9411 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				FAAE6F61265F7421004A9411 /* ConfirmOtpRouter.swift */,
+				FAAE6F64265F7430004A9411 /* ConfirmOtpRouterImpl.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		FAAE6F26265F5B6C004A9411 /* ConfirmOtpCell */ = {
+			isa = PBXGroup;
+			children = (
+				FAAE6F3B265F5DF7004A9411 /* ConfirmOtpCellDelegate.swift */,
+				FAAE6F4D265F7007004A9411 /* ConfirmOtpCell.swift */,
+				FAAE6F4E265F7007004A9411 /* ConfirmOtpCell.xib */,
+			);
+			path = ConfirmOtpCell;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		FAAE6EE3265F5A77004A9411 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAAE6EF9265F5A77004A9411 /* ConfirmOtp.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		FAAE6EE7265F5A77004A9411 /* ConfirmOtp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAAE6EFC265F5A77004A9411 /* Build configuration list for PBXNativeTarget "ConfirmOtp" */;
+			buildPhases = (
+				4A62DEAA2D182F373B21C333 /* [CP] Check Pods Manifest.lock */,
+				FAAE6EE3265F5A77004A9411 /* Headers */,
+				FAAE6EE4265F5A77004A9411 /* Sources */,
+				FAAE6EE5265F5A77004A9411 /* Frameworks */,
+				FAAE6EE6265F5A77004A9411 /* Resources */,
+				FAAE6F22265F5B3C004A9411 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ConfirmOtp;
+			productName = ConfirmOtp;
+			productReference = FAAE6EE8265F5A77004A9411 /* ConfirmOtp.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FAAE6EF0265F5A77004A9411 /* ConfirmOtpTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAAE6EFF265F5A77004A9411 /* Build configuration list for PBXNativeTarget "ConfirmOtpTests" */;
+			buildPhases = (
+				FAAE6EED265F5A77004A9411 /* Sources */,
+				FAAE6EEE265F5A77004A9411 /* Frameworks */,
+				FAAE6EEF265F5A77004A9411 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FAAE6EF4265F5A77004A9411 /* PBXTargetDependency */,
+			);
+			name = ConfirmOtpTests;
+			productName = ConfirmOtpTests;
+			productReference = FAAE6EF1265F5A77004A9411 /* ConfirmOtpTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FAAE6EDF265F5A77004A9411 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					FAAE6EE7265F5A77004A9411 = {
+						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
+					};
+					FAAE6EF0265F5A77004A9411 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = FAAE6EE2265F5A77004A9411 /* Build configuration list for PBXProject "ConfirmOtp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FAAE6EDE265F5A77004A9411;
+			productRefGroup = FAAE6EE9265F5A77004A9411 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FAAE6EE7265F5A77004A9411 /* ConfirmOtp */,
+				FAAE6EF0265F5A77004A9411 /* ConfirmOtpTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FAAE6EE6265F5A77004A9411 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAAE6F50265F7007004A9411 /* ConfirmOtpCell.xib in Resources */,
+				FAAE6F34265F5C21004A9411 /* ConfirmOtpViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAAE6EEF265F5A77004A9411 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4A62DEAA2D182F373B21C333 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ConfirmOtp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FAAE6EE4265F5A77004A9411 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAAE6F5F265F7264004A9411 /* ConfirmPinInteractorOutput.swift in Sources */,
+				FAAE6F62265F7421004A9411 /* ConfirmOtpRouter.swift in Sources */,
+				FAAE6F2E265F5BCE004A9411 /* ConfirmOtpDataSource.swift in Sources */,
+				FAAE6F53265F70E6004A9411 /* ConfirmOtpPresenter.swift in Sources */,
+				FAAE6F56265F70F7004A9411 /* ConfirmOtpPresenterImpl.swift in Sources */,
+				FAAE6F65265F7430004A9411 /* ConfirmOtpRouterImpl.swift in Sources */,
+				FAAE6F3C265F5DF7004A9411 /* ConfirmOtpCellDelegate.swift in Sources */,
+				FAAE6F33265F5C21004A9411 /* ConfirmOtpViewController.swift in Sources */,
+				FAAE6F5C265F7256004A9411 /* ConfirmPinInteractorImpl.swift in Sources */,
+				FAAE6F59265F7246004A9411 /* ConfirmPinInteractor.swift in Sources */,
+				FAAE6F4F265F7007004A9411 /* ConfirmOtpCell.swift in Sources */,
+				FAAE6F2B265F5BBC004A9411 /* ConfirmOtpView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAAE6EED265F5A77004A9411 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAAE6EF7265F5A77004A9411 /* ConfirmOtpTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FAAE6EF4265F5A77004A9411 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FAAE6EE7265F5A77004A9411 /* ConfirmOtp */;
+			targetProxy = FAAE6EF3265F5A77004A9411 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		FAAE6EFA265F5A77004A9411 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FAAE6EFB265F5A77004A9411 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FAAE6EFD265F5A77004A9411 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4FDA1BEB6C23914DB906AFF3 /* Pods-ConfirmOtp.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = T52Z585B79;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = ConfirmOtp/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.casestudy.ConfirmOtp;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FAAE6EFE265F5A77004A9411 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 989A8BD501D25EAF2276A880 /* Pods-ConfirmOtp.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = T52Z585B79;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = ConfirmOtp/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.casestudy.ConfirmOtp;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FAAE6F00265F5A77004A9411 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T52Z585B79;
+				INFOPLIST_FILE = ConfirmOtpTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.casestudy.ConfirmOtpTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FAAE6F01265F5A77004A9411 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T52Z585B79;
+				INFOPLIST_FILE = ConfirmOtpTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.casestudy.ConfirmOtpTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FAAE6EE2265F5A77004A9411 /* Build configuration list for PBXProject "ConfirmOtp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAAE6EFA265F5A77004A9411 /* Debug */,
+				FAAE6EFB265F5A77004A9411 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAAE6EFC265F5A77004A9411 /* Build configuration list for PBXNativeTarget "ConfirmOtp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAAE6EFD265F5A77004A9411 /* Debug */,
+				FAAE6EFE265F5A77004A9411 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAAE6EFF265F5A77004A9411 /* Build configuration list for PBXNativeTarget "ConfirmOtpTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAAE6F00265F5A77004A9411 /* Debug */,
+				FAAE6F01265F5A77004A9411 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FAAE6EDF265F5A77004A9411 /* Project object */;
+}

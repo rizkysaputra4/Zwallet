@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NunitoSans-Bold.ttf">
+            <string>NunitoSans-Bold</string>
+        </array>
+        <array key="NunitoSans-Regular.ttf">
+            <string>NunitoSans-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="711" id="KGk-i7-Jjw" customClass="PinConfirmationViewCell" customModule="Transfer" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="711"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="711"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rZR-Wf-ol5">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="92"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5LR-Zg-LQ9">
+                                <rect key="frame" x="16" y="44" width="174" height="28"/>
+                                <fontDescription key="fontDescription" name="NunitoSans-Bold" family="Nunito Sans" pointSize="20"/>
+                                <state key="normal" title="  Enter your PIN" image="arrow-left"/>
+                                <connections>
+                                    <action selector="backAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="PWg-Fu-3BW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.38823529411764707" green="0.47450980392156861" blue="0.95686274509803915" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="5LR-Zg-LQ9" firstAttribute="top" secondItem="rZR-Wf-ol5" secondAttribute="top" constant="44" id="8r0-JU-A2R"/>
+                            <constraint firstItem="5LR-Zg-LQ9" firstAttribute="leading" secondItem="rZR-Wf-ol5" secondAttribute="leading" constant="16" id="lzy-0u-8g6"/>
+                            <constraint firstAttribute="height" constant="92" id="uWD-SY-uEb"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Pin to Transfer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9m3-QW-50a">
+                        <rect key="frame" x="55.5" y="132" width="209.5" height="14.5"/>
+                        <fontDescription key="fontDescription" name="NunitoSans-Bold" family="Nunito Sans" pointSize="22"/>
+                        <color key="textColor" red="0.30196078431372547" green="0.29411764705882354" blue="0.3411764705882353" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Enter your 6 digits PIN for confirmation to continue transferring money." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Nyh-t5-uX1">
+                        <rect key="frame" x="16" y="166.5" width="288" height="56"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="56" id="Hd1-2c-aCC"/>
+                        </constraints>
+                        <color key="textColor" red="0.47843137254901957" green="0.47058823529411764" blue="0.52549019607843139" alpha="1" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" name="NunitoSans-Regular" family="Nunito Sans" pointSize="16"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="f87-dh-mNc">
+                        <rect key="frame" x="16" y="272.5" width="288" height="60"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="q9M-81-GQF" userLabel="Pin 1">
+                                <rect key="frame" x="0.0" y="0.0" width="39.5" height="60"/>
+                                <fontDescription key="fontDescription" name="NunitoSans-Bold" family="Nunito Sans" pointSize="24"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nnb-9b-E00" userLabel="Pin 2">
+                                <rect key="frame" x="49.5" y="0.0" width="40" height="60"/>
+                                <fontDescription key="fontDescription" name="NunitoSans-Bold" family="Nunito Sans" pointSize="24"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="irI-da-oIu" userLabel="Pin 3">
+                                <rect key="frame" x="99.5" y="0.0" width="39.5" height="60"/>
+                                <fontDescription key="fontDescription" name="NunitoSans-Bold" family="Nunito Sans" pointSize="24"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="s2b-6M-138" userLabel="Pin 4">
+                                <rect key="frame" x="149" y="0.0" width="39.5" height="60"/>
+                                <fontDescription key="fontDescription" name="NunitoSans-Bold" family="Nunito Sans" pointSize="24"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fFf-wo-1Jx" userLabel="Pin 5">
+                                <rect key="frame" x="198.5" y="0.0" width="40" height="60"/>
+                                <fontDescription key="fontDescription" name="NunitoSans-Bold" family="Nunito Sans" pointSize="24"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PvJ-1h-Ale" userLabel="Pin 6">
+                                <rect key="frame" x="248.5" y="0.0" width="39.5" height="60"/>
+                                <color key="tintColor" red="0.38823529410000002" green="0.47450980390000003" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="NunitoSans-Bold" family="Nunito Sans" pointSize="24"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="3pq-wl-WTx"/>
+                            <constraint firstItem="s2b-6M-138" firstAttribute="width" secondItem="q9M-81-GQF" secondAttribute="width" id="47l-XF-caZ"/>
+                            <constraint firstItem="irI-da-oIu" firstAttribute="width" secondItem="q9M-81-GQF" secondAttribute="width" id="PDh-2o-1ql"/>
+                            <constraint firstItem="fFf-wo-1Jx" firstAttribute="width" secondItem="q9M-81-GQF" secondAttribute="width" id="VoT-f1-Sno"/>
+                            <constraint firstItem="nnb-9b-E00" firstAttribute="width" secondItem="q9M-81-GQF" secondAttribute="width" id="bV0-PK-rWt"/>
+                            <constraint firstItem="PvJ-1h-Ale" firstAttribute="width" secondItem="q9M-81-GQF" secondAttribute="width" id="hiG-1t-sWI"/>
+                        </constraints>
+                    </stackView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OxG-ZI-fm6">
+                        <rect key="frame" x="16" y="613" width="288" height="57"/>
+                        <color key="backgroundColor" red="0.38823529411764707" green="0.47450980392156861" blue="0.95686274509803915" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="57" id="Ix7-th-EbY"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="NunitoSans-Bold" family="Nunito Sans" pointSize="18"/>
+                        <state key="normal" title="Continue">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="12"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="transferAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="WoN-V9-2DN"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" red="0.98039215686274506" green="0.9882352941176471" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                <constraints>
+                    <constraint firstItem="rZR-Wf-ol5" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="227-c1-3Jz"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="OxG-ZI-fm6" secondAttribute="bottom" constant="30" id="3Jm-gT-oCX"/>
+                    <constraint firstItem="OxG-ZI-fm6" firstAttribute="top" secondItem="f87-dh-mNc" secondAttribute="bottom" constant="280.5" id="7kb-7D-8S7"/>
+                    <constraint firstItem="Nyh-t5-uX1" firstAttribute="top" secondItem="9m3-QW-50a" secondAttribute="bottom" constant="20" id="8Ji-Cw-kOf"/>
+                    <constraint firstItem="OxG-ZI-fm6" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="Cq2-mt-b7A"/>
+                    <constraint firstItem="rZR-Wf-ol5" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="GBV-Pj-BYd"/>
+                    <constraint firstAttribute="trailing" secondItem="f87-dh-mNc" secondAttribute="trailing" constant="16" id="I5X-oe-Dcd"/>
+                    <constraint firstItem="f87-dh-mNc" firstAttribute="top" secondItem="Nyh-t5-uX1" secondAttribute="bottom" constant="50" id="P3j-lu-jTL"/>
+                    <constraint firstItem="9m3-QW-50a" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="Upm-1a-CJ3"/>
+                    <constraint firstAttribute="trailing" secondItem="rZR-Wf-ol5" secondAttribute="trailing" id="WkV-oZ-sRE"/>
+                    <constraint firstAttribute="trailing" secondItem="OxG-ZI-fm6" secondAttribute="trailing" constant="16" id="ft3-ur-X2H"/>
+                    <constraint firstAttribute="trailing" secondItem="Nyh-t5-uX1" secondAttribute="trailing" constant="16" id="iFJ-fP-ayk"/>
+                    <constraint firstItem="Nyh-t5-uX1" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="pP6-Tk-Ybb"/>
+                    <constraint firstItem="f87-dh-mNc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="tOO-rd-M3n"/>
+                    <constraint firstItem="9m3-QW-50a" firstAttribute="top" secondItem="rZR-Wf-ol5" secondAttribute="bottom" constant="40" id="viJ-Eu-0oQ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="continueBtn" destination="OxG-ZI-fm6" id="0qx-mu-UKj"/>
+                <outlet property="pin1" destination="q9M-81-GQF" id="npk-Zd-gT3"/>
+                <outlet property="pin2" destination="nnb-9b-E00" id="9Ar-e0-tTl"/>
+                <outlet property="pin3" destination="irI-da-oIu" id="m2w-Qg-8pr"/>
+                <outlet property="pin4" destination="s2b-6M-138" id="Il9-as-arx"/>
+                <outlet property="pin5" destination="fFf-wo-1Jx" id="BYi-7K-ZQl"/>
+                <outlet property="pin6" destination="PvJ-1h-Ale" id="RPt-kV-mXP"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="300.33482142857139"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="arrow-left" width="28" height="28"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

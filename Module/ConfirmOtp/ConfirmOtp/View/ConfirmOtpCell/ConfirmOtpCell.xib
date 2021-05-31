@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NunitoSans-Bold.ttf">
+            <string>NunitoSans-Bold</string>
+        </array>
+        <array key="NunitoSans-Regular.ttf">
+            <string>NunitoSans-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="723" id="KGk-i7-Jjw" customClass="ConfirmOtpCell" customModule="ConfirmOtp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="723"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="723"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Zwallet" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pcr-YZ-7id">
+                        <rect key="frame" x="119.5" y="105" width="81" height="33"/>
+                        <fontDescription key="fontDescription" name="NunitoSans-Bold" family="Nunito Sans" pointSize="24"/>
+                        <color key="textColor" red="0.38823529411764707" green="0.47450980392156861" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rO1-Fd-Cf7">
+                        <rect key="frame" x="0.0" y="198" width="320" height="525"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please input your OTP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xIb-DV-uyI">
+                                <rect key="frame" x="67.5" y="40" width="185" height="25"/>
+                                <fontDescription key="fontDescription" name="NunitoSans-Bold" family="Nunito Sans" pointSize="18"/>
+                                <color key="textColor" red="0.2274509804" green="0.23921568630000001" blue="0.25882352939999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="We have sent your OTP (One Time Password) code via Email" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="gRM-rc-IVC">
+                                <rect key="frame" x="16" y="85" width="288" height="60"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="Zuz-Yq-fxu"/>
+                                </constraints>
+                                <color key="textColor" red="0.22745098039215686" green="0.23921568627450979" blue="0.25882352941176467" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="NunitoSans-Regular" family="Nunito Sans" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="9XY-T2-aAH">
+                                <rect key="frame" x="16" y="195" width="288" height="60"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CVI-lA-ncp" userLabel="Otp1">
+                                        <rect key="frame" x="0.0" y="0.0" width="39.5" height="60"/>
+                                        <fontDescription key="fontDescription" name="NunitoSans-Regular" family="Nunito Sans" pointSize="24"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bkm-VB-Fsu" userLabel="Otp2">
+                                        <rect key="frame" x="49.5" y="0.0" width="40" height="60"/>
+                                        <fontDescription key="fontDescription" name="NunitoSans-Regular" family="Nunito Sans" pointSize="24"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ny5-KF-QjL" userLabel="Otp3">
+                                        <rect key="frame" x="99.5" y="0.0" width="39.5" height="60"/>
+                                        <fontDescription key="fontDescription" name="NunitoSans-Regular" family="Nunito Sans" pointSize="24"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HHI-ep-S1V" userLabel="Otp4">
+                                        <rect key="frame" x="149" y="0.0" width="39.5" height="60"/>
+                                        <fontDescription key="fontDescription" name="NunitoSans-Regular" family="Nunito Sans" pointSize="24"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="P2c-yQ-suL" userLabel="Otp5">
+                                        <rect key="frame" x="198.5" y="0.0" width="40" height="60"/>
+                                        <fontDescription key="fontDescription" name="NunitoSans-Regular" family="Nunito Sans" pointSize="24"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7ZL-Tp-sHJ" userLabel="Otp6">
+                                        <rect key="frame" x="248.5" y="0.0" width="39.5" height="60"/>
+                                        <fontDescription key="fontDescription" name="NunitoSans-Regular" family="Nunito Sans" pointSize="24"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="3az-th-r8R"/>
+                                    <constraint firstItem="P2c-yQ-suL" firstAttribute="width" secondItem="CVI-lA-ncp" secondAttribute="width" id="6xn-dM-4FI"/>
+                                    <constraint firstItem="bkm-VB-Fsu" firstAttribute="width" secondItem="CVI-lA-ncp" secondAttribute="width" id="Qll-jf-q8p"/>
+                                    <constraint firstItem="7ZL-Tp-sHJ" firstAttribute="width" secondItem="CVI-lA-ncp" secondAttribute="width" id="X9s-e3-2jO"/>
+                                    <constraint firstItem="HHI-ep-S1V" firstAttribute="width" secondItem="CVI-lA-ncp" secondAttribute="width" id="c29-ud-PrS"/>
+                                    <constraint firstItem="Ny5-KF-QjL" firstAttribute="width" secondItem="CVI-lA-ncp" secondAttribute="width" id="hyu-1X-JUx"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jk2-YX-hYd">
+                                <rect key="frame" x="16" y="407" width="288" height="60"/>
+                                <color key="backgroundColor" red="0.38823529411764707" green="0.47450980392156861" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="0EL-6r-Nkr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="NunitoSans-Bold" family="Nunito Sans" pointSize="18"/>
+                                <state key="normal" title="Confirm">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="confirmOtpAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="c8U-fJ-SEp"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="gRM-rc-IVC" secondAttribute="trailing" constant="16" id="4yn-jB-Qqa"/>
+                            <constraint firstItem="9XY-T2-aAH" firstAttribute="leading" secondItem="rO1-Fd-Cf7" secondAttribute="leading" constant="16" id="5W7-oK-1jw"/>
+                            <constraint firstItem="Jk2-YX-hYd" firstAttribute="leading" secondItem="rO1-Fd-Cf7" secondAttribute="leading" constant="16" id="69h-Q8-OQU"/>
+                            <constraint firstItem="gRM-rc-IVC" firstAttribute="leading" secondItem="rO1-Fd-Cf7" secondAttribute="leading" constant="16" id="F7i-HA-eNB"/>
+                            <constraint firstAttribute="bottom" secondItem="Jk2-YX-hYd" secondAttribute="bottom" constant="58" id="KuV-jH-poz"/>
+                            <constraint firstItem="xIb-DV-uyI" firstAttribute="centerX" secondItem="rO1-Fd-Cf7" secondAttribute="centerX" id="MN5-HW-sT4"/>
+                            <constraint firstAttribute="trailing" secondItem="9XY-T2-aAH" secondAttribute="trailing" constant="16" id="SoS-R3-C9q"/>
+                            <constraint firstItem="xIb-DV-uyI" firstAttribute="top" secondItem="rO1-Fd-Cf7" secondAttribute="top" constant="40" id="SwF-RD-Yd9"/>
+                            <constraint firstItem="9XY-T2-aAH" firstAttribute="top" secondItem="gRM-rc-IVC" secondAttribute="bottom" constant="50" id="lMt-tq-SF7"/>
+                            <constraint firstItem="Jk2-YX-hYd" firstAttribute="top" secondItem="9XY-T2-aAH" secondAttribute="bottom" constant="152" id="qHa-6l-gnb"/>
+                            <constraint firstItem="gRM-rc-IVC" firstAttribute="top" secondItem="xIb-DV-uyI" secondAttribute="bottom" constant="20" id="vOd-Sa-b4I"/>
+                            <constraint firstAttribute="trailing" secondItem="Jk2-YX-hYd" secondAttribute="trailing" constant="16" id="zVr-zS-SCR"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="rO1-Fd-Cf7" secondAttribute="trailing" id="CaA-nU-nOb"/>
+                    <constraint firstItem="rO1-Fd-Cf7" firstAttribute="top" secondItem="Pcr-YZ-7id" secondAttribute="bottom" constant="60" id="EbB-x5-efj"/>
+                    <constraint firstAttribute="bottom" secondItem="rO1-Fd-Cf7" secondAttribute="bottom" id="T4a-4q-3gT"/>
+                    <constraint firstItem="Pcr-YZ-7id" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="XNC-WS-pPz"/>
+                    <constraint firstItem="Pcr-YZ-7id" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="105" id="isb-6T-nL4"/>
+                    <constraint firstItem="rO1-Fd-Cf7" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="zQT-uh-F2X"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="confirmBtn" destination="Jk2-YX-hYd" id="rl7-WV-VLl"/>
+                <outlet property="otpText1" destination="CVI-lA-ncp" id="XYQ-qO-aQM"/>
+                <outlet property="otpText2" destination="bkm-VB-Fsu" id="tdF-Hh-Ysh"/>
+                <outlet property="otpText3" destination="Ny5-KF-QjL" id="MlH-9S-kGM"/>
+                <outlet property="otpText4" destination="HHI-ep-S1V" id="Gbr-f4-5VE"/>
+                <outlet property="otpText5" destination="P2c-yQ-suL" id="1Hg-Og-wO9"/>
+                <outlet property="otpText6" destination="7ZL-Tp-sHJ" id="Iyw-D6-z9X"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="330.46875"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

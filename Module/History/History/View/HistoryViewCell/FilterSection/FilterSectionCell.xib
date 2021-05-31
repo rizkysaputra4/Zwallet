@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NunitoSans-Bold.ttf">
+            <string>NunitoSans-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="138" id="KGk-i7-Jjw" customClass="FilterSectionCell" customModule="History" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="138"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="138"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x5s-Za-FWn">
+                        <rect key="frame" x="16" y="40" width="57" height="57"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow-up" translatesAutoresizingMaskIntoConstraints="NO" id="noG-rc-Q3A">
+                                <rect key="frame" x="14.5" y="14.5" width="28" height="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="KWv-Bn-uE5"/>
+                                    <constraint firstAttribute="width" constant="28" id="Y0Y-z3-G0m"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="57" id="3B2-RZ-P3H"/>
+                            <constraint firstAttribute="width" constant="57" id="5eN-Q9-KC5"/>
+                            <constraint firstItem="noG-rc-Q3A" firstAttribute="centerX" secondItem="x5s-Za-FWn" secondAttribute="centerX" id="dQ0-ea-1GK"/>
+                            <constraint firstItem="noG-rc-Q3A" firstAttribute="centerY" secondItem="x5s-Za-FWn" secondAttribute="centerY" id="xni-En-CFg"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hGh-mB-Yex">
+                        <rect key="frame" x="93" y="40" width="57" height="57"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow-down" translatesAutoresizingMaskIntoConstraints="NO" id="UBD-rV-BIN">
+                                <rect key="frame" x="14.5" y="14.5" width="28" height="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="28" id="eaK-3N-cpZ"/>
+                                    <constraint firstAttribute="height" constant="28" id="ejU-2B-ln5"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="57" id="1mG-zn-dJI"/>
+                            <constraint firstAttribute="height" constant="57" id="2hQ-N8-N6I"/>
+                            <constraint firstItem="UBD-rV-BIN" firstAttribute="centerX" secondItem="hGh-mB-Yex" secondAttribute="centerX" id="MQB-AY-1iQ"/>
+                            <constraint firstItem="UBD-rV-BIN" firstAttribute="centerY" secondItem="hGh-mB-Yex" secondAttribute="centerY" id="a7b-Yd-EQC"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FTs-2N-RZv">
+                        <rect key="frame" x="170" y="40" width="134" height="57"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="57" id="wyd-f3-60y"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="NunitoSans-Bold" family="Nunito Sans" pointSize="18"/>
+                        <state key="normal" title="Filter by Date">
+                            <color key="titleColor" red="0.38823529410000002" green="0.47450980390000003" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="FTs-2N-RZv" firstAttribute="centerY" secondItem="x5s-Za-FWn" secondAttribute="centerY" id="FFb-A9-HfA"/>
+                    <constraint firstItem="x5s-Za-FWn" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="PR6-0F-tAQ"/>
+                    <constraint firstItem="hGh-mB-Yex" firstAttribute="leading" secondItem="x5s-Za-FWn" secondAttribute="trailing" constant="20" id="eF2-A7-3JY"/>
+                    <constraint firstItem="hGh-mB-Yex" firstAttribute="centerY" secondItem="x5s-Za-FWn" secondAttribute="centerY" id="jyd-Hd-0Au"/>
+                    <constraint firstItem="x5s-Za-FWn" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="40" id="p7j-wT-pDc"/>
+                    <constraint firstAttribute="trailing" secondItem="FTs-2N-RZv" secondAttribute="trailing" constant="16" id="rMO-EC-Sio"/>
+                    <constraint firstItem="FTs-2N-RZv" firstAttribute="leading" secondItem="hGh-mB-Yex" secondAttribute="trailing" constant="20" id="sbN-8I-nfR"/>
+                    <constraint firstAttribute="bottom" secondItem="x5s-Za-FWn" secondAttribute="bottom" constant="41" id="zx0-1t-nqI"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="filterBtn" destination="FTs-2N-RZv" id="qxO-iA-iM4"/>
+                <outlet property="inView" destination="x5s-Za-FWn" id="z2V-pz-5hL"/>
+                <outlet property="outView" destination="hGh-mB-Yex" id="Ysj-I4-bkl"/>
+            </connections>
+            <point key="canvasLocation" x="-81.159420289855078" y="62.946428571428569"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="arrow-down" width="28" height="28"/>
+        <image name="arrow-up" width="28" height="28"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

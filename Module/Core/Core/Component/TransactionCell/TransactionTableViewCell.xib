@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NunitoSans-Bold.ttf">
+            <string>NunitoSans-Bold</string>
+        </array>
+        <array key="NunitoSans-SemiBold.ttf">
+            <string>NunitoSans-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="117" id="KGk-i7-Jjw" customClass="TransactionTableViewCell" customModule="Core" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="117"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="117"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wfn-W6-WHo">
+                        <rect key="frame" x="0.0" y="10" width="320" height="97"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pJb-zv-KfH">
+                                <rect key="frame" x="16" y="20.5" width="67" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="Ub5-jr-aTm"/>
+                                    <constraint firstAttribute="width" constant="67" id="y0F-Wt-dR6"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Notes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AZp-pm-ukU">
+                                <rect key="frame" x="98" y="54" width="133.5" height="20"/>
+                                <fontDescription key="fontDescription" name="NunitoSans-SemiBold" family="Nunito Sans" pointSize="14"/>
+                                <color key="textColor" red="0.47843137254901957" green="0.47058823529411764" blue="0.52549019607843139" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uwM-f7-glc">
+                                <rect key="frame" x="98" y="23" width="133.5" height="22"/>
+                                <fontDescription key="fontDescription" name="NunitoSans-Bold" family="Nunito Sans" pointSize="16"/>
+                                <color key="textColor" red="0.30196078431372547" green="0.29411764705882354" blue="0.3411764705882353" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amount" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fO9-6B-UR2">
+                                <rect key="frame" x="236.5" y="36" width="67.5" height="25"/>
+                                <fontDescription key="fontDescription" name="NunitoSans-Bold" family="Nunito Sans" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="pJb-zv-KfH" firstAttribute="leading" secondItem="Wfn-W6-WHo" secondAttribute="leading" constant="16" id="43W-5F-lfe"/>
+                            <constraint firstAttribute="bottom" secondItem="pJb-zv-KfH" secondAttribute="bottom" constant="20.5" id="5t5-5s-mUa"/>
+                            <constraint firstItem="uwM-f7-glc" firstAttribute="leading" secondItem="pJb-zv-KfH" secondAttribute="trailing" constant="15" id="Glh-LA-oqY"/>
+                            <constraint firstItem="AZp-pm-ukU" firstAttribute="leading" secondItem="uwM-f7-glc" secondAttribute="leading" id="WWJ-Rj-vf1"/>
+                            <constraint firstItem="fO9-6B-UR2" firstAttribute="centerY" secondItem="Wfn-W6-WHo" secondAttribute="centerY" id="Zdk-u0-SHS"/>
+                            <constraint firstAttribute="trailing" secondItem="fO9-6B-UR2" secondAttribute="trailing" constant="16" id="acG-Yw-beq"/>
+                            <constraint firstItem="pJb-zv-KfH" firstAttribute="centerY" secondItem="Wfn-W6-WHo" secondAttribute="centerY" id="cc3-DC-zr0"/>
+                            <constraint firstItem="uwM-f7-glc" firstAttribute="top" secondItem="Wfn-W6-WHo" secondAttribute="top" constant="23" id="fsk-Lh-uCf"/>
+                            <constraint firstItem="pJb-zv-KfH" firstAttribute="top" secondItem="Wfn-W6-WHo" secondAttribute="top" constant="20.5" id="g8d-i8-hrd"/>
+                            <constraint firstItem="AZp-pm-ukU" firstAttribute="top" secondItem="uwM-f7-glc" secondAttribute="bottom" constant="9" id="rih-jL-sqt"/>
+                            <constraint firstItem="fO9-6B-UR2" firstAttribute="leading" secondItem="AZp-pm-ukU" secondAttribute="trailing" constant="5" id="was-lo-1Ol"/>
+                            <constraint firstItem="fO9-6B-UR2" firstAttribute="leading" secondItem="uwM-f7-glc" secondAttribute="trailing" constant="5" id="y6C-RU-zwD"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="0.96470588235294119" green="0.97254901960784312" blue="0.98431372549019602" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="Wfn-W6-WHo" secondAttribute="trailing" id="N2i-gd-ntn"/>
+                    <constraint firstItem="Wfn-W6-WHo" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="r1n-fZ-UUX"/>
+                    <constraint firstAttribute="bottom" secondItem="Wfn-W6-WHo" secondAttribute="bottom" constant="10" id="z2X-YX-cMi"/>
+                    <constraint firstItem="Wfn-W6-WHo" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="zVR-Su-ZE0"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="amountLabel" destination="fO9-6B-UR2" id="Z3Z-WB-GRl"/>
+                <outlet property="nameLabel" destination="uwM-f7-glc" id="4TE-Lf-uPk"/>
+                <outlet property="noteLabel" destination="AZp-pm-ukU" id="7xj-E9-faR"/>
+                <outlet property="userImage" destination="pJb-zv-KfH" id="E35-23-g8H"/>
+            </connections>
+            <point key="canvasLocation" x="44.927536231884062" y="47.879464285714285"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

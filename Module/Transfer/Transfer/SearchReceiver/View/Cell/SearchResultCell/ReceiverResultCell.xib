@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NunitoSans-Bold.ttf">
+            <string>NunitoSans-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="97" id="KGk-i7-Jjw" customClass="ReceiverResultCell" customModule="Transfer" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="97"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="97"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Cti-Oh-GV3">
+                        <rect key="frame" x="16" y="20" width="56" height="56"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="56" id="KZc-Mn-vgB"/>
+                            <constraint firstAttribute="height" constant="56" id="xVe-nC-R2s"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Receiver Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k0B-BH-qfi">
+                        <rect key="frame" x="87" y="23" width="217" height="22"/>
+                        <fontDescription key="fontDescription" name="NunitoSans-Bold" family="Nunito Sans" pointSize="16"/>
+                        <color key="textColor" red="0.30196078431372547" green="0.29411764705882354" blue="0.3411764705882353" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone Number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ztO-qZ-cV2">
+                        <rect key="frame" x="87" y="54" width="217" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.47843137254901957" green="0.47058823529411764" blue="0.52549019607843139" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="k0B-BH-qfi" secondAttribute="trailing" constant="16" id="1zv-nR-5WO"/>
+                    <constraint firstItem="ztO-qZ-cV2" firstAttribute="leading" secondItem="k0B-BH-qfi" secondAttribute="leading" id="94e-eA-kx3"/>
+                    <constraint firstItem="k0B-BH-qfi" firstAttribute="leading" secondItem="Cti-Oh-GV3" secondAttribute="trailing" constant="15" id="9ov-jm-Lye"/>
+                    <constraint firstItem="Cti-Oh-GV3" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="D9w-Ga-5cp"/>
+                    <constraint firstAttribute="bottom" secondItem="Cti-Oh-GV3" secondAttribute="bottom" constant="21" id="TxE-n5-ucG"/>
+                    <constraint firstItem="k0B-BH-qfi" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="23" id="aQ7-1L-bdm"/>
+                    <constraint firstItem="ztO-qZ-cV2" firstAttribute="width" secondItem="k0B-BH-qfi" secondAttribute="width" id="fYw-Ts-okM"/>
+                    <constraint firstItem="Cti-Oh-GV3" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="n8q-kn-RjB"/>
+                    <constraint firstItem="ztO-qZ-cV2" firstAttribute="top" secondItem="k0B-BH-qfi" secondAttribute="bottom" constant="9" id="x87-Jc-aAM"/>
+                </constraints>
+                <userDefinedRuntimeAttributes>
+                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                        <integer key="value" value="10"/>
+                    </userDefinedRuntimeAttribute>
+                </userDefinedRuntimeAttributes>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="cellView" destination="H2p-sc-9uM" id="GTO-3o-kFH"/>
+                <outlet property="receiverImage" destination="Cti-Oh-GV3" id="19N-Bd-T7k"/>
+                <outlet property="receiverNameLabel" destination="k0B-BH-qfi" id="Fcx-En-ZUH"/>
+                <outlet property="receiverPhoneNumberLabel" destination="ztO-qZ-cV2" id="4rt-wJ-Abb"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="104.12946428571428"/>
+        </tableViewCell>
+    </objects>
+</document>
