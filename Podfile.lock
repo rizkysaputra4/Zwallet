@@ -6,11 +6,13 @@ PODS:
   - Moya/Core (14.0.0):
     - Alamofire (~> 5.0)
   - netfox (1.19.0)
+  - SkeletonView (1.15.0)
 
 DEPENDENCIES:
   - Kingfisher (~> 6.0)
   - Moya
   - netfox
+  - SkeletonView
 
 SPEC REPOS:
   trunk:
@@ -18,13 +20,15 @@ SPEC REPOS:
     - Kingfisher
     - Moya
     - netfox
+    - SkeletonView
 
 SPEC CHECKSUMS:
   Alamofire: e447a2774a40c996748296fa2c55112fdbbc42f9
   Kingfisher: 6c3df386db71d82c0817a429d2c9421a77396529
   Moya: 5b45dacb75adb009f97fde91c204c1e565d31916
   netfox: efeec1d23406df6cd605212f09a40957bb5654eb
+  SkeletonView: cac18a3ac4f893b09d99e65072d806ef08377aae
 
-PODFILE CHECKSUM: ec13d936053f1bd248a2ddc94f6e1714d20c8225
+PODFILE CHECKSUM: adc2ad424bedc0d5fc22b3ff403e70c5091d6fb4
 
 COCOAPODS: 1.10.1
