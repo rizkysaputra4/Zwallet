@@ -1,6 +1,6 @@
 # Zwallet
 
-Zwallet is an open project that create an app to make and manage transaction. The main feature of this app is the user can send money to its friend from the app. At this version the feature that has been created are:
+Zwallet is an open project that create an app to make and manage transaction. The main feature of this app is the user can send money to its friend from the app. At this version the feature that been created are:
 * Register
 * Login
 * Logout
@@ -9,22 +9,22 @@ Zwallet is an open project that create an app to make and manage transaction. Th
 
 The other feature of Zwallet will be added over time.
 
-This app using VIPER as its design pattern, using iOS 12.1 as minimum SDK, and using following library:
+This app using VIPER as its design pattern, using iOS 12.1 as minimum SDK, and using following libraries:
 * [KingFisher](https://github.com/onevcat/Kingfisher), to manage image display
-* [MOya](https://github.com/Moya/Moya), for network abstaction
+* [Moya](https://github.com/Moya/Moya), for network abstaction
 * [SkeletonVIew](https://github.com/Juanpe/SkeletonView), to manage skeleton loading
 
 Those dependency are managed by [cocoapods](https://cocoapods.org/)
 
 ## Install
 
-To import this project to your computer you need to install Xcode and cocoapods in your computer, and following steps below to open the project:
-1. Open terminal then navigate to `./App` or you can navigate to this project folder then right click from App folder and choose `Service > New terminal at folder`
+To import this project to your computer you need to install Xcode and cocoapods in your computer, and follow steps below to open the project:
+1. Open terminal then navigate to `./App` or using finder you can navigate to this project folder then right click from App folder and choose `Service > New terminal at folder`
 2. Install all dependency using this command:
 ```
 pods install
 ```
-3. If there is no error then you can navigate to `./App` and double click at `Zwallet/xcworkspace`
+3. If there is no error you can open the app by navigating to `./App` folder and double click at `Zwallet/xcworkspace`
 
 ## Feature
 
@@ -45,15 +45,19 @@ Some feature and scene in this app:
 * Transfer
 
     * Search Receiver
+
         [![search reciever](https://i.postimg.cc/YS3kNRBt/simulator-screenshot-C958-C61-F-836-B-4326-A654-C044306-C4062.png)](https://postimg.cc/rdKvMSpH)
 
     * Enter Amount
+
         [![search amount](https://i.postimg.cc/cJ91yh9X/simulator-screenshot-3-F505-B11-D63-D-442-F-AE45-F2-FE92-F7948-A.png)](https://postimg.cc/SX9bc6pM)
 
     * Confirmation
+
         [![confirmation](https://i.postimg.cc/RhczFLdr/simulator-screenshot-89-D9-F099-08-B5-4-A5-D-BCA3-BB20-E8-CB6-EAA.png)](https://postimg.cc/q6MFDnWQ)
 
     * Enter Pin
+
         [![enter pin](https://i.postimg.cc/4yGS8k6M/simulator-screenshot-35-BF2-D87-5-ABA-49-AB-B00-B-53-FF603-F23-B4.png)](https://postimg.cc/XG2LJPDc)
 
     * Status
@@ -78,5 +82,5 @@ Some usage of this app:
     * View, a group that focus on describing and managing all interface logic.
     * Interactor, a group that focus on interaction with the server or to make data fetching or posting.
     * Router, group that focus on defining router or navigation used in this particular module. Router also the first responder when the module being called from other module, so the initiation of all viper component is happend here.
-    * Entity, group to store all models used in the module
-    * Presenter, a group to define all connection among all viper component.
+    * Entity, group that store all models used in the module
+    * Presenter, a group that define all connection among all viper component.
